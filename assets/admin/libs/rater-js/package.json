@@ -10,7 +10,7 @@
   "types": "index.d.ts",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -t [ browserify-css --inlineImages]  -t  [babelify --presets [ @babel/preset-env] ]  ./lib/rater-js -o index.js --standalone rater-js",
+    "build": "node init && browserify -t [ browserify-css --inlineImages]  -t  [babelify --presets [ @babel/preset-env] ]  ./lib/rater-js -o index.js --standalone rater-js",
     "test": "mocha --require ignore-styles"
   },
   "keywords": [
