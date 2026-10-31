@@ -12,7 +12,7 @@
   "scripts": {
     "format": "prettier wNumb.js --write --print-width=120",
     "minify": "uglifyjs wNumb.js --compress --mangle --output wNumb.min.js",
-    "build": "npm run format && npm run minify"
+    "build": "node init && npm run format && npm run minify"
   },
   "files": [
     "wNumb.js",
